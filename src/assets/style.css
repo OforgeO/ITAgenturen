@@ -336,7 +336,7 @@ input:-webkit-autofill:focus {
     text-align: center;
 }
 
-.mainmenu-area #primary-menu > ul > li > a:before {
+/*.mainmenu-area #primary-menu > ul > li > a:before {
     content: "";
     position: absolute;
     left: 50%;
@@ -363,7 +363,7 @@ input:-webkit-autofill:focus {
 .mainmenu-area #primary-menu ul li a:hover {
     border-top: 3px solid #ffffff;
 }
-
+*/
 .mainmenu-area.affix {
     background-color: #0741ad;
 }
@@ -1021,7 +1021,7 @@ preloader
     background-color: #ffc72c;
 }
 .services__tile--blue {
-    background-color: #0033a0;
+    background-color: #3BB143;
 }
 .services__tile--red {
     background-color: #651d32;
