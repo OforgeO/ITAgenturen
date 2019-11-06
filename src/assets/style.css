@@ -1049,3 +1049,10 @@ preloader
 .team-photo img {
     height: 300px;
 }
+.blog-photo{
+    text-align: center;
+}
+.blog-photo img{
+    width: auto;
+    height: 200px;
+}
