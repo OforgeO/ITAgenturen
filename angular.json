@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "company": {
+    "my-dream-app": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/company",
+            "outputPath": "dist/my-dream-app",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -25,8 +25,7 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": [
-            ]
+            "scripts": []
           },
           "configurations": {
             "production": {
@@ -44,25 +43,32 @@
               "aot": true,
               "extractLicenses": true,
               "vendorChunk": false,
-              "buildOptimizer": true
+              "buildOptimizer": true,
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "2mb",
+                  "maximumError": "5mb"
+                }
+              ]
             }
           }
         },
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "company:build"
+            "browserTarget": "my-dream-app:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "company:build:production"
+              "browserTarget": "my-dream-app:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "company:build"
+            "browserTarget": "my-dream-app:build"
           }
         },
         "test": {
@@ -96,19 +102,20 @@
         }
       }
     },
-    "company-e2e": {
+    "my-dream-app-e2e": {
       "root": "e2e/",
       "projectType": "application",
+      "prefix": "",
       "architect": {
         "e2e": {
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "company:serve"
+            "devServerTarget": "my-dream-app:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "company:serve:production"
+              "devServerTarget": "my-dream-app:serve:production"
             }
           }
         },
@@ -124,5 +131,5 @@
       }
     }
   },
-  "defaultProject": "company"
+  "defaultProject": "my-dream-app"
 }

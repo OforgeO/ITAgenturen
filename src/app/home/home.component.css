@@ -1,0 +1,24 @@
+.cookie_text{
+    width: calc(100% - 27px);
+    float: left;
+}
+._text{
+    position: relative;
+}
+.cookie_close{
+    float:right;
+    color:white;
+    margin-left:10px;
+    vertical-align:middle;
+    cursor: pointer;
+}
+
+.cookie{
+    width:100%;
+    background-color:#496957;
+    color:white;
+    padding: 15px;
+    display: flex;
+    position: fixed;
+    z-index: 9999999999999999;
+}

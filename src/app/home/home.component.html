@@ -1,0 +1,326 @@
+<div class="cookie" *ngIf="!hideCookie">
+    <div  class="cookie_text _text">
+        <span>Genom att besöka vår webbsida och använda våra tjänster visar du att du är införstådd med och accepterar hur vi hanterar din personliga data i enlighet med vår Privacy & Cookie policy. Vi respekterar din integritet och dina rättigheter att styra över din personliga data. Våra principer är enkla. Vi ska vara öppna med vilken data vi samlar in och varför. Ta ett kort ögonblick och läs igenom vår <a href="/policy" style="color:white;text-decoration:underline;">Policy.</a> Det är viktigt.</span>
+    </div>
+    <div style="float:left;" class="test">
+        <span class="cookie_close" (click)="close_cookie()">X</span>
+    </div>
+</div>
+<div class="preloader">
+  <div class="sk-folding-cube">
+      <div class="sk-cube1 sk-cube"></div>
+      <div class="sk-cube2 sk-cube"></div>
+      <div class="sk-cube4 sk-cube"></div>
+      <div class="sk-cube3 sk-cube"></div>
+  </div>
+</div>
+<!--Mainmenu-area-->
+<div class="mainmenu-area" data-spy="affix" data-offset-top="100">
+  <div class="container">
+      <!--Logo-->
+      <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#primary-menu">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a href="#" class="navbar-brand logo">
+              <img src="assets/images/logo.png">
+          </a>
+      </div>
+      <!--Logo/-->
+      <nav class="collapse navbar-collapse" id="primary-menu">
+          <ul class="nav navbar-nav navbar-right">
+              <li><a href="#feature-page">Services</a></li>
+              <li><a href="#accomplish-page">Projects</a></li>
+              <li><a href="#price-page">Find Consultant</a></li>
+              <li><a href="/become-consultant">Become Consultant</a></li>
+              <li><a href="#contact-page">Contact Us</a></li>
+              <li><a href="#faq-page">Login</a></li>
+          </ul>
+      </nav>
+  </div>
+</div>
+<!--Mainmenu-area/-->
+
+
+<!--Header-area-->
+<header class="overlay full-height relative v-center" id="home-page">
+  <div class="absolute"></div>
+  <div class="container">
+      <div class="row v-center">
+          <div class="col-xs-12 col-md-7 header-text">
+              <h2>Technical IT consulting to meet your business needs</h2>
+              <a href="#" class="button white">Contact Us</a>
+          </div>
+      </div>
+  </div>
+</header>
+<!--Header-area/-->
+
+<section class="section-padding gray-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-sm-offset-3 text-center">
+                <div class="page-title">
+                    <h2>Success Stories from our Clients </h2>
+                    <!--p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Velit voluptates, temporibus at, facere harum fugiat!</p-->
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2">
+                <div class="testimonials">
+                    <div class="testimonial">
+                        <div class="testimonial-photo">
+                            <img src="https://www.skyrise.tech/wp-content/uploads/2019/03/Thomas_McGuire_thumb.jpg" alt="">
+                        </div>
+                        <h3>Thomas McGuire</h3>
+                        <p>ITAgenturen implemented the partner portal for us, based on a requirement document from start to finish, including QA and UX. I enjoyed their professionalism during all of our encounters.</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-photo">
+                            <img src="https://www.skyrise.tech/wp-content/uploads/2019/02/Bengt_Bilde_wycięty-1-1.jpg" alt="">
+                        </div>
+                        <h3>Bengt Jørgen Olsen</h3>
+                        <p>I value their honesty and ability to meet deadlines. If they notice any problems they tell us immediately.</p>
+                    </div>
+                    <div class="testimonial">
+                        <div class="testimonial-photo">
+                            <img src="https://www.skyrise.tech/wp-content/uploads/2017/10/Gorm-Krogh.jpg" alt="">
+                        </div>
+                        <h3>Gorm Krogh</h3>
+                        <p>Their insight helps us create specific features that better suit our customers.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-padding" id="feature-page">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+            <h2>Services</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+              <div class="service_side">
+                <div class="service_desc services__tile--blue">
+                    <h3>Website design and Development</h3>
+                </div>
+                <div class="service_img">
+                    <img src="assets/images/web-dev.jpg" />
+                </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+              <div class="service_side">
+                    <div class="service_desc services__tile--yellow">
+                        <h3>UI Designer</h3>
+                    </div>
+                    <div class="service_img">
+                        <img src="assets/images/UI-Designer.jpeg" />
+                    </div>
+              </div>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+              <div class="service_side">
+                    <div class="service_img">
+                        <img src="assets/images/backend.jpg" />
+                    </div>
+                    <div class="service_desc services__tile--yellow">
+                        <h3>Backend Developers</h3>
+                    </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+              <div class="service_side">
+                    <div class="service_img">
+                        <img src="assets/images/tester.jpg" />
+                    </div>
+                    <div class="service_desc services__tile--blue">
+                        <h3>Tester, Automation Tester</h3>
+                    </div>
+              </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+                <div class="service_side">
+                      <div class="service_desc services__tile--blue">
+                          <h3>Cloud development</h3>
+                      </div>
+                      <div class="service_img">
+                          <img src="assets/images/cloud.jpg" />
+                      </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+                <div class="service_side">
+                      <div class="service_desc services__tile--yellow">
+                          <h3>Solution Consultant</h3>
+                      </div>
+                      <div class="service_img">
+                          <img src="assets/images/solutin.jpg" />
+                      </div>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+                <div class="service_side">
+                    <div class="service_img">
+                        <img src="assets/images/it.jpg" />
+                    </div>
+                    <div class="service_desc services__tile--yellow">
+                        <h3>IT Help desk Support Consultant</h3>
+                    </div>
+                </div>
+          </div>
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+                <div class="service_side">
+                    <div class="service_img">
+                        <img src="assets/images/project.jpg" />
+                    </div>
+                    <div class="service_desc services__tile--blue">
+                        <h3>Project Manager & Co ordinator</h3>
+                    </div>
+                </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-xs-12 col-sm-6 col-md-6 service_padding">
+                <div class="service_side">
+                      <div class="service_desc services__tile--blue">
+                          <h3>Analyst</h3>
+                      </div>
+                      <div class="service_img">
+                          <img src="assets/images/analyst.jpg" />
+                      </div>
+                </div>
+          </div>
+        
+        </div>
+  </div>
+</section>
+
+<section class="gray-bg section-padding" id="accomplish-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <h2>Missions accomplished</h2>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 service_padding">
+                <div class="single-team">
+                    <div class="team-photo">
+                        <img src="assets/images/project1.png" />
+                    </div>
+                    <h4>Dahl Mobile - Affordable mobile tech from Sweden</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 service_padding">
+                <div class="single-team">
+                    <div class="team-photo">
+                        <img src="assets/images/project2.png" />
+                    </div>
+                    <h4>Dogslife</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 service_padding">
+                <div class="single-team">
+                    <div class="team-photo">
+                        <img src="assets/images/project3.png" />
+                    </div>
+                    <h4>Giving Week</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 service_padding">
+                <div class="single-team">
+                    <div class="team-photo">
+                        <img src="assets/images/project4.png" />
+                    </div>
+                    <h4>Accueil | Une soumission, svp!</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 service_padding">
+                <div class="single-team">
+                    <div class="team-photo">
+                        <img src="assets/images/project5.png" />
+                    </div>
+                    <h4>Ecommerce</h4>
+                </div>
+            </div>
+            <div class="col-xs-12 col-sm-6 service_padding">
+                <div class="single-team">
+                    <div class="team-photo">
+                        <img src="assets/images/project6.png" />
+                    </div>
+                    <h4>MAGIC ABODE</h4>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="service_padding text-center">
+                <a href="#contact-page">
+                    <h3>Want to Built Your Dream Website Contact Us </h3>
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<section class="section-padding white-bg" id="blog-page">
+  <div class="container">
+      <div class="row">
+          <div class="col-xs-12">
+              <h2>About Us</h2>
+          </div>
+      </div>
+      <div class="row">
+          <div class="col-xs-12 col-sm-6">
+              <div class="single-blog">
+                  <div class="blog-photo">
+                      <img src="assets/images/dahl.png" alt="">
+                  </div>
+                  <div class="blog-content">
+                      <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
+                      <ul class="blog-meta">
+                          <li><span class="ti-user"></span> <a href="#">Admin</a></li>
+                          <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
+                      </ul>
+                      <p>We deliver professional services in accordance with our values and relevant technical and professional standards. We offer only those services that we can deliver and strive to deliver no less than our commitments. We respect the confidentiality and privacy of our clients, our people and others with whom we do business. We comply with laws, regulations and professional standards in order to maintain the appropriate degree of confidentiality and privacy.</p>
+                  </div>
+              </div>
+          </div>
+          <div class="col-xs-12 col-sm-6">
+              <div class="single-blog">
+                  <div class="blog-photo">
+                      <img src="assets/images/avani.jpg" alt="">
+                  </div>
+                  <div class="blog-content">
+                      <h3><a href="#">Beautiful Place for your Great Journey</a></h3>
+                      <ul class="blog-meta">
+                          <li><span class="ti-user"></span> <a href="#">Admin</a></li>
+                          <li><span class="ti-calendar"></span> <a href="#">Feb 01, 2017</a></li>
+                      </ul>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odit nemo eaque expedita aliquid dolorem repellat perferendis, facilis aut fugit, impedit.</p>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+
