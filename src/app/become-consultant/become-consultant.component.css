@@ -2,6 +2,8 @@
     position: absolute;
     top: 40vh;
     color: white;
+    width: 100%;
+    text-align: center;
 }
 .career{
     font-size: 50px;
@@ -66,4 +68,10 @@
     border-image: -webkit-gradient(linear,left bottom,left top,color-stop(0,#00ae87),to(#0069b4)) 1 100%;
     border-image: linear-gradient(to top,#00ae87 0,#0069b4 100%) 1 100%;
     border-left-width: .6875rem;
+}
+.consultant h4{
+    font-size: 30px;
+}
+.consultant h1{
+    font-size: 60px;
 }
