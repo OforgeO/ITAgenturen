@@ -8,19 +8,12 @@ import { Component, OnInit } from '@angular/core';
 })
 export class HomeComponent implements OnInit {
 
-  hideCookie = 0;
-  constructor(
-    
-  ) { 
-    this.hideCookie = +localStorage.getItem('hideCookie');
+  
+  constructor() { 
   }
 
   ngOnInit() {
-    
   }
 
-  close_cookie(){
-    this.hideCookie = 1;
-    localStorage.setItem('hideCookie', JSON.stringify(1));
-  }
+  
 }

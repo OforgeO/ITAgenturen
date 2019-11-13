@@ -1056,3 +1056,6 @@ preloader
     width: auto;
     height: 200px;
 }
+#consultant-page{
+    background-image: url('images/consultant.jpg') ;
+}

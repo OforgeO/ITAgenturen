@@ -1,0 +1,37 @@
+<header class="full-height relative v-center" >
+  <div class="container text-center" style="color: white;">
+    <div class="row">
+      <h4 class="text-center" id="loginheader">Skapa nytt konto</h4>
+        
+      <form [formGroup]="signupForm" (ngSubmit)="signup(signupForm.value)">
+        <div class="form-group">
+          <input type="text" class="form-control input-lg" name="email" placeholder="Email" formControlName="email">
+        </div>
+        <div class="form-group" [hidden]="hide_email">
+          <p style="text-align:left;color:red;">Email should be not empty</p>
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control input-lg" name="password" placeholder="Lösenord" formControlName="password">
+        </div>
+        <div class="form-group">
+          <input type="password" class="form-control input-lg" name="confirm_password" placeholder="Bekräfta lösenord" formControlName="confirm_password">
+        </div>
+        <div class="form-group" [hidden]="hide_pwd">
+          <p style="text-align:left;color:red;">Password should be same or not empty.</p>
+        </div>
+        <div class="form-group" [hidden]="hide_error">
+          <p style="text-align:left;color:red;">{{error_msg}}</p>
+        </div>
+        <div class="form-group" [hidden]="hide_valid">
+          <p style="text-align:left;color:red;">Lösenordet måste bestå av minst 8 tecken, en versal och en siffra</p>
+        </div>
+        <div class="form-group">
+          <p>Genom att registrera dig accepterar du Petropolis AB <a href="https://itsadogslife.se/policy" style="text-decoration:none;">Allmänna villkor och integritetspolicy</a></p>
+        </div>
+        <div class="wow fadeInUp" data-wow-delay="0.4s">
+            <button type="submit" class="button">Registrera</button>
+        </div>
+      </form>   
+    </div>
+  </div>
+</header>

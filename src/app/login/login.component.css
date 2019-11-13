@@ -1,0 +1,22 @@
+.horizontalline{
+    display: block;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+    height: 1px;
+    background-color:#666;
+    opcaity: 0.5;
+}
+#loginheader{
+    color: white;
+    font-size: 50px;
+}
+header{
+    background: #076a8a;
+}
+.button{
+    margin: 20px 0;
+}

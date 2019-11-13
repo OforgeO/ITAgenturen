@@ -1,0 +1,42 @@
+<header class="full-height relative v-center" >
+  <div class="container">
+    <div class="row ">
+      <p class="text-center" id="loginheader">Logga in</p>
+      <form [formGroup]="loginForm" (ngSubmit)="login(loginForm.value)">
+        <div class="form-group">
+          <input type="email" class="form-control input-lg" name="email" placeholder="Mail" formControlName="email" >
+        </div>
+
+        <div class="form-group">
+          <input type="password" class="form-control input-lg" name="password" placeholder="Lösenord" formControlName="password">
+        </div>
+        <div class="form-group" [hidden]="wrong_login">
+          <p style="color:white;width:80%;margin:auto;">Just den här kombinationen av e-postadress och lösenord finns inte. Kontrollera uppgifterna och försök gärna igen.</p>
+        </div>
+        
+        <div class="wow fadeInUp text-center" data-wow-delay="0.4s">
+            <button type="submit" class="button">Logga in</button>
+        </div>
+        <p class="text-center" style="color: white;">
+          <a routerLink="/forgot-password" style="color: white;text-decoration: underline;">Glömt ditt lösenord? </a>
+        </p>
+      </form>
+
+      <div class="horizontalline"></div>      
+
+      <div class="wow fadeInUp text-center" data-wow-delay="0.4s">
+          <button (click)="socialSignIn('facebook')" class="button">Logga in med Facebook</button><br>
+          <button (click)="socialSignIn('google')" class="button">Logga in med Google</button>
+      </div>
+
+      <div class="horizontalline"></div>
+        
+      <p class="text-center" style="color: white;">
+        <small>Har du inget konto hos oss? Registrera dig här!</small>
+      </p>
+      <div class="text-center">
+        <a href="/signup" class="button">Skapa nytt konto</a>
+      </div>
+    </div>
+  </div>
+</header>
