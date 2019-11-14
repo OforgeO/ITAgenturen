@@ -20,3 +20,27 @@ header{
 .button{
     margin: 20px 0;
 }
+@media screen and (max-height: 780px){
+    #loginheader{
+        padding-top: 100px;
+    }
+    .full-height{
+        height: calc(100vh + 100px);
+    }
+}
+@media screen and (max-height: 630px){
+    #loginheader{
+        padding-top: 150px;
+    }
+    .full-height{
+        height: calc(100vh + 200px);
+    }
+}
+@media screen and (max-height: 550px){
+    #loginheader{
+        padding-top: 100px;
+    }
+    .full-height{
+        height: calc(100vh + 300px);
+    }
+}
