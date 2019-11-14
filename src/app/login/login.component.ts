@@ -2,11 +2,6 @@ import { Component, OnInit } from '@angular/core';
 import { FormGroup, FormBuilder, Validators, NgForm } from '@angular/forms';
 import { Router } from '@angular/router';
 import { BackendService } from '../service/backend.service';
-import {
-  AuthService,
-  FacebookLoginProvider,
-  GoogleLoginProvider,
-} from 'angularx-social-login';
 
 @Component({
   selector: 'app-login',
@@ -19,7 +14,6 @@ export class LoginComponent implements OnInit {
   wrong_login:boolean = true;
   constructor(private fb: FormBuilder,
     private router: Router,
-    private socialAuthService: AuthService ,
     private backend: BackendService
     ) { }
 
@@ -47,10 +41,10 @@ export class LoginComponent implements OnInit {
   }
 
   public socialSignIn(socialPlatform : string) {
-    let socialPlatformProvider;
-    /*if(socialPlatform == "facebook"){
+    /*let socialPlatformProvider;
+    if(socialPlatform == "facebook"){
       socialPlatformProvider = FacebookLoginProvider.PROVIDER_ID;
-    }else*/ if(socialPlatform == "google"){
+    }else if(socialPlatform == "google"){
       socialPlatformProvider = GoogleLoginProvider.PROVIDER_ID;
     }
     this.socialAuthService.signIn(socialPlatformProvider).then(
@@ -58,6 +52,6 @@ export class LoginComponent implements OnInit {
         console.log(userData);
         
       }
-    )
+    )*/
   }
 }
